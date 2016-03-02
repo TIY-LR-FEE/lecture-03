@@ -1,25 +1,51 @@
 body {
-	margin: 100px 0 100px;
+	margin: 100px;
 }
 
-div {
+.idarb {
 	height: 150px;
 	width: 80px;
 	background-color: crimson;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-40px, -75px);
+	box-shadow: 2px 5px 25px #000;
+	animation: 4s linear 0s infinite dance-idarb-dance;
 }
 
-main {
-	width: 80px;
-	height: 50px;
+.face {
+	width: 62px;
+	height: 40px;
 	background-color: burlywood;
+	padding: 10px 0 0 18px;
 }
 
-article {
+.hair {
 	width: 80px;
 	height: 20px;
 	background-color: #000;
+}
+
+.eye {
+	width: 20px;
+	height: 20px;
+	background-color: #000;
+	display: inline-block;
+	vertical-align: top;
+}
+
+@keyframes dance-idarb-dance {
+	20% {
+		transform: translateX(-20px) rotate(10deg);
+	}
+
+	40% {
+		transform: translateX(-40px) rotate(0deg);
+	}
+
+	60% {
+		transform: translateX(0px) rotate(-10deg);
+	}
+
+	80% {
+		transform: translateX(40px) rotate(0deg)
+	}
+
 }
